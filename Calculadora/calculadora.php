@@ -1,5 +1,5 @@
 <?php 
-    include("calculadora.html");
+    include("index.php");
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
     $op = $_POST['op'];
@@ -22,6 +22,22 @@
             case "div":
                 $resultado = $num1 / $num2;
                 echo "<font style='color:white; margin-left: 47.7%;'>O resultado da divisão é: $resultado </font>";
+            break;
+            case "por":
+                $resultado = (($num1 / 100) * $num2);
+                echo "<font style='color:white; margin-left: 47.7%;'>O resultado da porcentagem é: $resultado </font>";
+            break;
+            case "inv":
+                $resultado = (1 / $num1 );
+                echo "<font style='color:white; margin-left: 47.7%;'>O resultado inverso de um número é: $resultado </font>";
+            break;
+            case "pot":
+                $resultado = pow($num1, $num2 );
+                echo "<font style='color:white; margin-left: 47.7%;'>O resultado da potenciação é: $resultado </font>";
+            break;
+            case "raiz":
+                $resultado = sqrt($num1);
+                echo "<font style='color:white; margin-left: 47.7%;'>O resultado da raiz é: $resultado </font>";
             break;
         }
     }else{
