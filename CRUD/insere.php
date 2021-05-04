@@ -52,7 +52,8 @@
 				<div class="card-header">
 					MENU INSERSÃO
 				</div>
-				<div class="card-body">
+				<div class="card-body">					
+					<a href="inserirArquivo.php" class="btn btn-primary">Inserir Aluno por Arquivo</a>
 					<a href="lista.php" class="btn btn-primary">Listar Alunos</a>
 					<a href="buscar.php" class="btn btn-primary">Exibir um Aluno</a>
 

@@ -21,6 +21,7 @@
 				</div>
 				<div class="card-body">
                     <a href="insere.php" class="btn btn-primary">Inserir Aluno</a>
+                    <a href="inserirArquivo.php" class="btn btn-primary">Inserir Aluno por Arquivo</a>
 					<a href="lista.php" class="btn btn-primary">Listar Alunos</a>
 
 					<form class="mt-2" method="POST" action="buscar.php">

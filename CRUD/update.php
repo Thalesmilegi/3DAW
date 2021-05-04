@@ -6,7 +6,7 @@ if(isset($_POST['update'])){
   $id = $_POST['id'];
   $query = mysqli_query($con, "UPDATE Alunos SET nome = '$nome', mat = '$mat', datanasc = '$datanasc' WHERE id = '$id'");
   if ($query) {
-    header("location:index.php");
+    header("location:lista.php");
   }else{
     echo "<script>alert('Desculpe, atualizar a consulta não funciona')</script>";
   }
@@ -38,6 +38,7 @@ if(isset($_POST['update'])){
                 </div>
                 <div class="card-body">
                     <a href="insere.php" class="btn btn-primary">Inserir Aluno</a>
+                    <a href="inserirArquivo.php" class="btn btn-primary">Inserir Aluno Por Arquivo</a>
                     <a href="lista.php" class="btn btn-primary">Listar Alunos</a>
                     <a href="buscar.php" class="btn btn-primary">Exibir um Aluno</a>
 
