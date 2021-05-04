@@ -52,8 +52,6 @@
                     <th>Nome</th>
                     <th>Matricula</th>
                     <th>Data de Nascimento</th>
-                    <th>Update</th>
-                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -65,8 +63,6 @@
                             <td><?php echo $linha['nome']; ?></td>
                             <td><?php echo $linha['mat']; ?></td>
                             <td><?php echo $linha['datanasc']; ?></td>
-                            <td><a class="update" href="update.php?update_id=<?php echo $linha['mat']; ?>">Update</a></td>
-                            <td><a class="delete" href="delete.php?delete_id=<?php echo $linha['mat']; ?>">Delete</a></td>
                         </tr>
                         <?php
                     }
